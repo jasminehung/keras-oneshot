@@ -22,6 +22,8 @@ Then you'll need to download the omniglot dataset and preprocess/pickle it with 
 git clone https://github.com/brendenlake/omniglot
 python load_data.py --path <PATH TO THIS FOLDER>
 ```
+omniglot放在keras-oneshot資料夾中 : python load_data.py --path ~/keras-oneshot
+
 
 若出現cannot import name imread: sudo pip install Pillow==2.6.0
 
@@ -30,3 +32,6 @@ Then you can run the jupyter notebook:
 jupyter notebook
 ```
 
+run on python3 讀檔時 若出現 'ascii' codec can't decode byte
+use (X,c) = pickle.load(f , encoding='bytes')
+https://stackoverflow.com/questions/46046752/python-3-unicodedecodeerror-ascii-codec-cant-decode-byte-0xe2-in-position-0
