@@ -22,6 +22,9 @@ Then you'll need to download the omniglot dataset and preprocess/pickle it with 
 git clone https://github.com/brendenlake/omniglot
 python load_data.py --path <PATH TO THIS FOLDER>
 ```
+
+若出現cannot import name imread: sudo pip install Pillow==2.6.0
+
 Then you can run the jupyter notebook:
 ```bash
 jupyter notebook
